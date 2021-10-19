@@ -338,6 +338,7 @@
     <p>This demo shows how to create a mat-table that places data in cells based on the row and column index of that data.</p>
   </div>
 
+  <!-- Bind the data source to the 2D data array in your corresponding .ts file. -->
   <table mat-table [dataSource]="tableData">
 
     <!-- Define the column templates. Use an ngFor to create a template for
@@ -345,6 +346,7 @@
     <mat-text-column *ngFor="let data of tableColumns"
                      [name]="data"></mat-text-column>
 
+    <!-- Uncomment the following line if you want column headers. -->
     <!--<tr mat-header-row *matHeaderRowDef="tableColumns"></tr>-->
     <tr mat-row *matRowDef="let row; columns: tableColumns;"></tr>
   </table>

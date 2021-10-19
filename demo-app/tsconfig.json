@@ -16,14 +16,14 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "resolveJsonModule": true, // Added to support reading data from local json file.
+    "esModuleInterop": true, // Added to support reading data from local json file.
     "lib": [
       "es2018",
       "dom"
     ]
   },
-  "allowSyntheticDefaultImports": true,
+  "allowSyntheticDefaultImports": true, // Added to support reading data from local json file.
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
